@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfeff;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .carItem {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .carItem img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .buyButton {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .buyButton:hover {
+    background-color: #45a049;
+  }
+  
+  .carForm {
+    display: none;
+  }
+  
+  .carForm input[type="text"],
+  .carForm select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .carForm button[type="submit"],
+  #backButton {
+    background-color: #008cba;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .carForm button[type="submit"]:hover,
+  #backButton:hover {
+    background-color: #005f6b;
+  }
+  
+  .error {
+    color: red;
+    font-style: italic;
+  }
+  
+  #confirmation {
+    display: none;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  footer {
+      color: #fff; 
+      padding: 20px;
+      text-align: center;
+      background: none; 
+  }
+  
+  #logo {
+    width: 500px;
+    border: 2px solid #333; 
+    padding: 10px; 
+  }
+  
+  footer p {
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+  
+  footer div {
+      margin-bottom: 10px;
+  }
+  
+  footer div span {
+      display: block;
+      color: #2e7370; 
+  }
+  
+  .text-muted {
+    color: #0c0c0c;
+  }
+  

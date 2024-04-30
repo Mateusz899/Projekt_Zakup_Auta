@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Car App</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+</div>
+<div class="container">
+    <input type="text" id="carSearchInput" placeholder="Wyszukaj po marce...">
+    <div id="carList"></div>
+
+    <div id="carForm" class="carForm">
+        <h2>Formularz konfiguracji</h2>
+        <form id="purchaseForm">
+            <div>
+                <label for="financing">Wybierz finansowanie:</label><br>
+                <input type="radio" id="cash" name="financing" value="gotówka" checked>
+                <label for="cash">Gotówka</label><br>
+                <input type="radio" id="leasing" name="financing" value="leasing">
+                <label for="leasing">Leasing</label><br>
+            </div>
+            <div>
+                <label for="ownerName">Imię i nazwisko:</label><br>
+                <input type="text" id="ownerName" name="ownerName" required><br>
+            </div>
+            <div>
+                <label for="deliveryDate">Data dostawy:</label><br>
+                <select id="deliveryDate" name="deliveryDate">
+                    <!-- Dostępne daty dostawy będą generowane dynamicznie -->
+                </select><br>
+            </div>
+            <div>
+                <label for="accessories">Wybierz akcesoria:</label><br>
+                <select id="accessories" name="accessories" multiple>
+                    <option value="1">GPS - 500 zł</option>
+                    <option value="2">Podgrzewane fotele - 1000 zł</option>
+                    <option value="3">Kamera cofania - 800 zł</option>
+                </select><br>
+            </div>
+            <div>
+                <button type="submit">Zakup</button>
+                <button type="button" id="backButton">Powrót do wyboru</button>
+            </div>
+        </form>
+        <p id="errorMessage" class="error"></p>
+    </div>
+
+    <div id="confirmation" style="display: none;">
+        <h2>Potwierdzenie zakupu</h2>
+        <p>Dziękujemy za zakup auta!</p>
+        <p>Metoda płatności: <span id="paymentMethod"></span></p>
+        <p><strong>Całkowita cena auta wynosi:</strong> <span id="totalPrice"></span> zł</p>
+        <img src="" alt="Wybrany samochód" id="confirmationImage">
+    </div>
+</div>
+<script src="script.js"></script>
+<footer>
+    <img id="logo" src="assets/logo1.jpg" alt="logo" />
+    <p class="text-muted">Copyright © 2024 Super_Car Company. All rights reserved.</p>
+    <div>
+        <span>Tylko u nas gwarancja do bramy i się nie znamy</span>
+        <br>
+        <span>Adres: ul. Samochodwa 77, NY</span>
+        <br>
+        <span>e-mail: Nasze_samochody_są_super@gmail.com</span>
+    </div>
+</footer>
+</body>
+
+</html>

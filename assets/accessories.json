@@ -1,0 +1,11 @@
+{
+    "financingOptions": [
+        {"id": 0, "name": "Gotówka"},
+        {"id": 1, "name": "Leasing"}
+    ],
+    "accessories": [
+        {"id": 0, "name": "GPS Navigation System", "price": 500},
+        {"id": 1, "name": "Podgrzewane fotele", "price": 1000},
+        {"id": 2, "name": "Kamera cofania", "price": 800}
+    ]
+}

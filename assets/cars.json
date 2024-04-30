@@ -1,0 +1,102 @@
+[
+    {
+      "id": 0,
+      "price": 25000,
+      "picture": "/assets/car0.png",
+      "brand": "Toyota",
+      "manufacture_year": 2020,
+      "model": "Camry",
+      "engine_power": "200",
+      "mileage": "30,000"
+    },
+    {
+      "id": 1,
+      "price": 30000,
+      "picture": "/assets/car1.png",
+      "brand": "Honda",
+      "manufacture_year": 2019,
+      "model": "Accord",
+      "engine_power": "190",
+      "mileage": "25,000"
+    },
+    {
+      "id": 2,
+      "price": 18000,
+      "picture": "/assets/car2.png",
+      "brand": "Ford",
+      "manufacture_year": 2018,
+      "model": "Focus",
+      "engine_power": "160",
+      "mileage": "35,000"
+    },
+    {
+      "id": 3,
+      "price": 35000,
+      "picture": "/assets/car3.png",
+      "brand": "BMW",
+      "manufacture_year": 2021,
+      "model": "3 Series",
+      "engine_power": "250",
+      "mileage": "10,000"
+    },
+    {
+      "id": 4,
+      "price": 40000,
+      "picture": "/assets/car4.png",
+      "brand": "Audi",
+      "manufacture_year": 2020,
+      "model": "A4",
+      "engine_power": "220",
+      "mileage": "15,000"
+    },
+    {
+      "id": 5,
+      "price": 20000,
+      "picture": "/assets/car5.png",
+      "brand": "Chevrolet",
+      "manufacture_year": 2017,
+      "model": "Cruze",
+      "engine_power": "170",
+      "mileage": "40,000"
+    },
+    {
+      "id": 6,
+      "price": 28000,
+      "picture": "/assets/car6.png",
+      "brand": "Mercedes-Benz",
+      "manufacture_year": 2019,
+      "model": "C-Class",
+      "engine_power": "240",
+      "mileage": "20,000"
+    },
+    {
+      "id": 7,
+      "price": 32000,
+      "picture": "/assets/car7.png",
+      "brand": "Lexus",
+      "manufacture_year": 2019,
+      "model": "ES",
+      "engine_power": "215",
+      "mileage": "22,000"
+    },
+    {
+      "id": 8,
+      "price": 22000,
+      "picture": "/assets/car8.png",
+      "brand": "Volkswagen",
+      "manufacture_year": 2018,
+      "model": "Jetta",
+      "engine_power": "180",
+      "mileage": "30,000"
+    },
+    {
+      "id": 9,
+      "price": 27000,
+      "picture": "/assets/car9.png",
+      "brand": "Hyundai",
+      "manufacture_year": 2020,
+      "model": "Sonata",
+      "engine_power": "190",
+      "mileage": "18,000"
+    }
+  ]
