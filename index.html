@@ -6,7 +6,7 @@
     <title>Super Car App</title>
     <link rel="stylesheet" href="./styles/style.css" />
 </head>
-</div>
+<body>
 <div class="container">
     <input type="text" id="carSearchInput" placeholder="Wyszukaj po marce...">
     <div id="carList"></div>
@@ -27,17 +27,17 @@
             </div>
             <div>
                 <label for="deliveryDate">Data dostawy:</label><br>
-                <select id="deliveryDate" name="deliveryDate">
-                </select><br>
+                <select id="deliveryDate" name="deliveryDate"></select><br>
             </div>
             <div>
                 <label for="accessories">Wybierz akcesoria:</label><br>
-                <select id="accessories" name="accessories" multiple>
-                    <option value="1">GPS - 500 zł</option>
-                    <option value="2">Podgrzewane fotele - 1000 zł</option>
-                    <option value="3">Kamera cofania - 800 zł</option>
-                </select><br>
-            </div>
+                    <input type="checkbox" id="gps" name="accessories" value="1">
+                    <label for="gps">GPS - 500 zł</label><br>
+                    <input type="checkbox" id="heatedSeats" name="accessories" value="2">
+                    <label for="heatedSeats">Podgrzewane fotele - 1000 zł</label><br>
+                    <input type="checkbox" id="rearCamera" name="accessories" value="3">
+                    <label for="rearCamera">Kamera cofania - 800 zł</label><br>
+            </div>   
             <div>
                 <button type="submit">Zakup</button>
                 <button type="button" id="backButton">Powrót do wyboru</button>

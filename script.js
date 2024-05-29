@@ -7,6 +7,10 @@ const confirmationDiv = document.getElementById("confirmation");
 const paymentMethodSpan = document.getElementById("paymentMethod");
 const totalPriceSpan = document.getElementById("totalPrice");
 const confirmationImage = document.getElementById("confirmationImage");
+const confirmationBackButton = document.createElement("button");
+confirmationBackButton.textContent = "Powrót do wyboru auta";
+confirmationDiv.appendChild(confirmationBackButton);
+
 let selectedCarId = null;
 let carsData = [];
 
@@ -56,7 +60,14 @@ window.addEventListener("load", () => {
   if (savedFormData) {
     purchaseForm.ownerName.value = savedFormData.ownerName;
     purchaseForm.deliveryDate.value = savedFormData.deliveryDate;
-    purchaseForm.accessories.value = savedFormData.accessories;
+    savedFormData.accessories.forEach((accessory) => {
+      const accessoryCheckbox = document.querySelector(
+        `input[name="accessories"][value="${accessory}"]`
+      );
+      if (accessoryCheckbox) {
+        accessoryCheckbox.checked = true;
+      }
+    });
   }
 });
 
@@ -64,7 +75,9 @@ purchaseForm.addEventListener("change", () => {
   const formData = {
     ownerName: purchaseForm.ownerName.value,
     deliveryDate: purchaseForm.deliveryDate.value,
-    accessories: purchaseForm.accessories.value,
+    accessories: Array.from(purchaseForm.accessories)
+      .filter((checkbox) => checkbox.checked)
+      .map((checkbox) => checkbox.value),
   };
   localStorage.setItem("carPurchaseFormData", JSON.stringify(formData));
 });
@@ -74,6 +87,7 @@ function showPurchaseForm(carId) {
   selectedCarId = carId;
   carListDiv.style.display = "none";
   carFormDiv.style.display = "block";
+  confirmationDiv.style.display = "none";
   errorMessage.textContent = "";
   populateDeliveryDates();
 }
@@ -97,7 +111,15 @@ function populateDeliveryDates() {
 backButton.addEventListener("click", () => {
   carListDiv.style.display = "block";
   carFormDiv.style.display = "none";
+  confirmationDiv.style.display = "none";
   purchaseForm.reset();
+});
+
+confirmationBackButton.addEventListener("click", () => {
+  carListDiv.style.display = "block";
+  confirmationDiv.style.display = "none"; 
+  purchaseForm.reset();
+  selectedCarId = null;
 });
 
 // Formularz zakupu
@@ -123,7 +145,7 @@ purchaseForm.addEventListener("submit", (e) => {
   paymentMethodSpan.textContent = paymentMethod;
   totalPriceSpan.textContent = totalPrice;
   confirmationImage.src = selectedCar.picture;
-  purchaseForm.reset();
+  carFormDiv.style.display = "none";
   selectedCarId = null;
 });
 
