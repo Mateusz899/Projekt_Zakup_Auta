@@ -82,6 +82,27 @@ body {
     text-align: center;
   }
   
+  #confirmation button {
+    background-color: #008cba;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  #confirmation button:hover {
+    background-color:#005f6b;
+  }
+
+  #confirmationImage {
+    max-width: 100%;
+    max-height: 400px;
+    margin: auto;
+    display: block;
+  }
+
   footer {
       color: #fff; 
       padding: 20px;
